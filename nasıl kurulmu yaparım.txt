@@ -1,0 +1,32 @@
+Öncelikle botu aldığın için sana teşekkür ediyorum
+Basit 1, 2 adımda botu kurman için bu texti okuman yeterli olacaktır
+
+node ve vsc kurulumu (daha önceden bot kodlayan kişiler bu adımları atlayabilirler)
+
+öncelikle node.js in websitesinde giriyoruz ve en son sürüm node.js i indiriyoruz
+setup uygulaması açıldığında next next diye kurulumu tamamlıyoruz powershell ekranında indirme devam ediyor
+indirme sona erdiğinde herşey kendini otomatik olarak kapatacak o yüzden afk bırakabilirsiniz
+
+ardından Visual Studio Code yi indiriyoruz kendi orjinal sitesinden son sürümü kurabilirsiniz
+setup uygulamasında next next diyerek ilerliyoruz kurulum tamamlandığında VSC yi kapatabilirsiniz
+
+
+Botun Kurulması (önemli)
+
+Botun klasörüne geliyoruz ve index.js i visual studio code ile açıyoruz 
+ardından en alt satıra iniyoruz ve client.login('token'); yazan yere geliyoruz
+bu satırda token yazan yerin içerisinde discord hesabınızın tokenini yapıştırıyoruz
+
+ardından üst satırlara geliyoruz orada var kanal = "id"; satırını göreceksiniz
+bu satırda id yazan yere hangi kanalda çalışacaksa o kanalın id sini giriyoruz
+(id almak için discord ayarlarına girin davranış sekmesine girin geliştirici modunu aktif edin)
+
+ardından bir alt satırında olan var sahip = "id"; satırına geliyoruz
+id yazan yere kendi id nizi yapıştırıyorsunuz ve botunuz hazır hale geliyor
+
+botu f5 tuşu ile ya da klasörün içerisindeki başlat.bat ile çalıştırabilirsiniz
+Bot aktif olduktan sonra !çalıştır yazıyoruz ve bize açıldı diye cevap vermesi gerekiyor
+cevap verdiğinde botunuz hazır hale gelmiş oluyor
+
+
+

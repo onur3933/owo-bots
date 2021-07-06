@@ -1,0 +1,26 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const {JsonDatabase} = require("wio.db");
+const db = new JsonDatabase("db");
+var kanal = "857539653807636483";
+var sahip = "798484323018866748";
+client.on("ready",()=>{console.log("Hazırım!");});
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo h");};},80000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo h");};},160000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo battle");};},100000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo battle");};},160000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo sell all");};},90000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo pray");};},310000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("by_kyrax");};},250000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo shrug");};},1200000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo shrug");};},990000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo curse");};},320000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo cash");};},400000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo zoo");};},900000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo lb all");};},400000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo roll");};},890000);
+setInterval(function(){if(db.get("owodg") != "1"){client.channels.get(kanal).send("owo crate");};},420000);
+
+client.on("message",message=>{ if(message.author.id == sahip){ if(message.content == "!dur sikmim"){db.set("owodg","1"); message.channel.send("tamam ab durdum");};};});
+client.on("message",message=>{ if(message.channel.id==kanal || message.channel.type == "dm"){ if(message.author.id=="408785106942164992"){if(message.content.includes("Beep Boop") || message.content.includes("Please DM me") || message.content.includes("human") || message.content.includes("check")){ db.set("owodg","1"); message.channel.send("Hassiktir yakalandık, @kyrax_editss Onaylanınca !çalış lan yaz <@689030915569352727>");};};}; if(message.author.id == sahip){ if(message.content == "!çalış lan"){db.set("owodg","0"); message.channel.send("Açıldı");};};});
+client.login("Nzk4NDg0MzIzMDE4ODY2NzQ4.YN8tlg.1pMJDmY1nljusxfVFay4PrSAyiI )");
